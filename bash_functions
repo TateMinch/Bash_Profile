@@ -1,12 +1,19 @@
 #!/bin/bash
-unset -f adhoc
-adhoc () {
-    open -a "Google Chrome" https://meet.google.com/pox-wdvm-itz
+unset -f gcalendar 
+gcalendar () {
+    open -a "Google Chrome" https://calendar.google.com/calendar/u/0/r
 }
-export adhoc
+export gcalendar
 
-unset -f cfa
-cfa () {
-    open -a "Google Chrome" https://bandwidth-jira.atlassian.net/browse/CFA-$1
+unset -f gmail
+gmail () {
+    open -a "Google Chrome" https://mail.google.com/mail/u/0/
 }
-export cfa
+export gmail
+
+unset -f gstart
+gstart () {
+    gmail
+    gcalendar
+}
+export gstart
