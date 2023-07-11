@@ -16,3 +16,4 @@ gstart () {
     gmail
     gcalendar
 }
+export gstart
