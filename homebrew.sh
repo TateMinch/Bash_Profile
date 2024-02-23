@@ -37,29 +37,18 @@ function brewCaskInstall(){
 }
 
 PACKAGES=(
-    ack
-    ansible
     bat
     ctop
     diff-so-fancy
     docker
     docker-compose
-    exa
     fig
-    fzf
-    htop
     jq
     lastpass-cli
-    lazydocker
-    newt
     node@14
     tableplus
-    terminal-notifier
-    terraform
     tldr
     tree
-    watch
-    yq
 )
 
 for p in ${PACKAGES[@]}; do
@@ -68,12 +57,10 @@ done
 
 CASKS=(
     google-chrome
-    alfred
     rectangle
     spotify
     visual-studio-code
-    session-manager-plugin
-    blackhole-2ch
+    iterm2
 )
 
 for c in ${CASKS[@]}; do
@@ -83,6 +70,3 @@ done
 # Set up diff-so-fancy
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
-# Install AWS CLI 2.x
-curl -s "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-sudo installer -pkg AWSCLIV2.pkg -target /
