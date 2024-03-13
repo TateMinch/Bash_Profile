@@ -5,8 +5,6 @@ alias st="git status"
 alias python="python3"
 alias ..="cd .."
 alias ...="cd ../.."
-#PS1='%F{magenta}%~%f
-#%F{magenta}❯%f '
 
 precmd() {
   local git_branch
