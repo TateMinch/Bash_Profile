@@ -1,3 +1,4 @@
+#!/bin/bash
 # CodeWhisperer pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 export LS_COLORS="di=34:*.sh=32:*.exe=36"
